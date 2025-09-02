@@ -1,0 +1,6 @@
+resource "aws_db_instance" "app_db" {
+  # ...
+  backup_retention_period = 7
+  backup_window           = "02:00-03:00"
+  # ...
+}
